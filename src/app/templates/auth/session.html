@@ -1,0 +1,17 @@
+{% extends "auth/base.html" %}
+
+{% block content %}
+
+<table class="table table-striped">
+  <thead>
+    <th>Name</th><th>Values</th>
+  </thead>
+  <tbody>
+    {% for key, value in session.items() %}
+      <tr><td>{{ key }}</td><td>{{ value }}</td></tr>
+    {% endfor %}
+  </tbody>
+</table>
+<a href="/auth/slo" class="btn btn-danger">Logout</a>
+
+{% endblock %}
