@@ -21,4 +21,4 @@ defusedxml==0.5.0
 flask-dynamodb-sessions==0.1.4
 flask-cors==3.0.7
 pyjwt==1.7.1
-cryptography==2.6.1
+cryptography==3.2
